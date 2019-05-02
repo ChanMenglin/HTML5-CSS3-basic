@@ -7,7 +7,7 @@
 
 ## 目录（Contents）
 
-* [1. HTML5](#1-HTML5)
+* [1. HTML5](#1-html5)
     + [1.1 简化的元素](#11-简化的元素)
         * [1.1.1 Doctype 文档类型声明](#111-doctype-文档类型声明)
         * [1.1.2 Mate 声明](#112-mate-声明)
@@ -38,21 +38,21 @@
     * [1.4 HTML5 音频播放](#14-html5-音频播放)
         * [1.4.1 HTML5 之前 WEB 上的音频格式](#141-html5-之前-web-上的音频格式)
         * [1.4.2 几种常用的播放 MP3 音频文件的方式](#142-几种常用的播放-mp3-音频文件的方式)
-        * [1.4.3 audio标签（HTML5标签）](#143-audio标签html5标签)
+        * [1.4.3 audio标签（HTML5标签）](#143-audio-标签html5标签)
     * [1.5 HTML5 表单](#15-html5-表单)
         * [1.5.1 新增 input 类型](#151-新增-input-类型)
         * [1.5.2 新增表单元素](#152-新增表单元素)
         * [1.5.3 HTML5 表单验证](#153-html5-表单验证)
             * [1.5.3.1 输入类型验证](#1531-输入类型验证)
             * [1.5.3.2 必填字段（required）](#1532-必填字段required)
-            * [1.5.3.3 字符长度（minlength 和 maxlength）](#-1533-字符长度minlength-和-maxlength)
+            * [1.5.3.3 字符长度（minlength 和 maxlength）](#1533-字符长度minlength-和-maxlength)
             * [1.5.3.4 数值\日期和时间范围（min 和 max）](#1534-数值日期和时间范围min-和-max)
             * [1.5.3.5 步长（step）](#1535-步长step)
             * [1.5.3.6 正则表达式（pattern）](#1536-正则表达式pattern)
             * [1.5.3.7 禁用表单验证](#1537-禁用表单验证)
         * [1.5.4 新增表单属性](#154-新增表单属性)
     * [1.6 HTML5 中的全局属性](#16-html5-中的全局属性)
-* [2. CSS3](#2-CSS3)
+* [2. CSS3](#2-css3)
 * [参考链接](#参考链接)
 
 ## 内容简介
@@ -141,14 +141,14 @@ HTML5 `<meta charset=”UTF-8" />`
 #### 1.1.3 [Link] 标签
 
 HTML4.0 `<link rel="stylesheet" type="text/css" href="index.css">`  
-HTML4.0 `<link rel="stylesheet" href="index.css">` (不需要 type属性 浏览器会自动推断出 CSS 文本就是这里需要的类型)  
+HTML4.0 `<link rel="stylesheet" href="index.css">` (不需要 type 属性 浏览器会自动推断出 CSS 文本就是这里需要的类型)  
 
 [back to Contents]
 
 #### 1.1.4 [Script] 标签
 
 HTML4.0 `<scrip type="text/javascript" src="index.js"></scrip>`  
-HTML4.0 `<scrip src="index.js"></scrip>` (不需要 type属性 浏览器会自动推断出 javascript 文本就是这里需要的类型)  
+HTML4.0 `<scrip src="index.js"></scrip>` (不需要 type 属性 浏览器会自动推断出 javascript 文本就是这里需要的类型)  
 
 [back to Contents]
 
