@@ -194,7 +194,7 @@ article 标签的使用：博客 评论的帖子 新闻报道 用户评论等
 
 一般被放置在页面的顶部或摸个区块的顶部，包含整个页面或区块的标题、简介等信息  
 
-Header 标签的使用：  
+header 标签的使  
 
 1. 一个文档中可包含多于一个的 header 标签
 2. header 标签不一定放在页面（或区块）的顶部，内容决定是否使用 header 标签，位置并不重要
@@ -220,7 +220,7 @@ Header 标签的使用：
 
 一般放置在页面的底部或莫个区块的地部  
 
-footer 标签的使用：
+footer 标签的使用
 
 ```html
 <article>
@@ -239,7 +239,7 @@ footer 标签的使用：
 
 表示页面的导航，可以通过导航链接到网站的其他页面或当前页面的其他部分  
 
-nav 标签的使用：
+nav 标签的使用
 
 1. 页面中独立的导航区域
 2. 头部导航区域的一部分
@@ -265,7 +265,7 @@ nav 标签的使用：
 
 包含的内容不是页面的主要内容，具有独立性，是对页面内容的补充  
 
-aside 标签的使用：
+Aside 标签的使用
 
 1. 页面侧边栏
 2. 广告
@@ -286,7 +286,7 @@ aside 标签的使用：
 
 > PS：section 类似于 div 标签都是区分不同的内容，但 div 标签的适用范围更广，只想给莫一内容一个单独的样式都可以使用 div 标签，而 section 包含一个明确的主题，通常有标题区域
 
-section 标签的使用：
+section 标签的使用
 
 ```html
 <section>
@@ -309,7 +309,7 @@ section 标签的使用：
 
 显示页面的主题内容  
 
-main 标签的使用：
+main 标签的使用
 
 每个页面只能包含一个 main 标签
 Main标签不包含网页的标题、logo、主导航、版权声明等信息
@@ -318,7 +318,7 @@ Main标签不包含网页的标题、logo、主导航、版权声明等信息
 
 ##### 1.2.2.2 [figure]（图像） 和 [figcaption]（图形标题）
 
-figure 和 figcaption 标签的用法：
+figure 和 figcaption 标签的用法
 
 ```html
 <figure>
@@ -336,7 +336,7 @@ figure 和 figcaption 标签的用法：
 
 表示一个日期或一个时间或者同时表示一个日期和时间值  
 
-time 标签的使用：
+time 标签的使用
 
 `<time datetime=”2015-6-30”>2015年6月30日</time>`  
 `datatime` 是一个重要的属性，是一个固定格式的日期或时间格式，可以被搜索引擎、屏幕阅读器方便的识别和使用  
@@ -363,7 +363,7 @@ time 的格式：
 html4 中修饰文本样式，将文字显示为 斜体 文本  
 Html5 表示不同的情绪或声音，也可以表示技术术语、生物类、来自另一种语言的	成语或习语、一个想法等等。  
 
-i 标签的用法：
+i 标签的用法
 
 ```html
 <p><i>家猪</i>是一种可爱的动物</p>
@@ -378,7 +378,7 @@ i 标签的用法：
 html4 修饰文字样式，将文字显示为 粗体 文本  
 html5 显示文本中的关键字、商品名称等  
 
-b 标签的使用：
+b 标签的使用
 
 ```html
 <p>
@@ -393,7 +393,7 @@ b 标签的使用：
 
 标签中的内容是强调的重点内容，在浏览器中显示为 斜体  
 
-em 标签的用法：
+em 标签的用法
 
 ```html
 <p><em>猫</em>是可爱的动物</p>	//强调”猫“，”猫“斜体显示
@@ -406,7 +406,7 @@ em 标签的用法：
 
 表示非常重要、严重性或内容的紧迫性，在浏览器中显示为 粗体  
 
-strong 标签的用法：
+strong 标签的用法
 
 ```html
 <strong>警告：水深危险！</strong>
@@ -444,7 +444,7 @@ strong 标签的用法：
 
 不是 web 的标准
 
-embed 标签的使用：
+embed 标签的使用
 
 ```html
 <!-- 用于加载 flash 插件以及 flash 视屏 -->
@@ -781,7 +781,7 @@ HTML5 中 input 标签新增的 type 属性
 
 > datalist 列表中的值仅为输入建议，用户也可以填写一个其他的值
 
-Datalist 标签的使用：
+datalist 标签的使用
 
 ```html
 <input type="text" list="browsers" id="t" multiple >
@@ -791,7 +791,8 @@ Datalist 标签的使用：
    <option value="Internet Explorer">
    <option value="Opera">
    <option value="Opera mini">
-   <option value="Safari">//用 option 标签提供一组列表值
+   <option value="Safari">
+   //用 option 标签提供一组列表值
 </datalist>
 ```
 
@@ -802,7 +803,7 @@ Datalist 标签的使用：
 
 > 由于浏览器的支持不好，这里不做深入讲解，可查询 web 安全相关知识进一步学习
 
-Keygen 标签的使用
+keygen 标签的使用
 
 ```html
 <form action="#" method="get">
@@ -814,7 +815,7 @@ Keygen 标签的使用
 
 3. **[output]** 标签（主要用于显示 javascript 脚本输出）
 
-Output标签的使用
+output标签的使用
 
 ```html
 <form oninput="x.value=a.value">
@@ -830,14 +831,14 @@ Output标签的使用
 
 > 表单验证：在用户提交表单之前确保用户输入的数据是合法和有效的  
 >
-> * 输入类型验证：number、email、url  
-> * 必填字段验证：required  
-> * 字符长度验证：minlength、maxlength  
-> * 设置数值范围：min、max  
-> * 设置日期和时间范围：min、max  
-> * 设置步长：step  
-> * 正则表达式验证：pattern  
-> * 禁用表单验证：novalidate、formnovalidate  
+> * [输入类型验证](#1531-输入类型验证)：number、email、url  
+> * [必填字段验证](#1532-必填字段required)：required  
+> * [字符长度验证](#1533-字符长度minlength-和-maxlength)：minlength、maxlength  
+> * [设置数值范围](#1534-数值日期和时间范围min-和-max)：min、max  
+> * [设置日期和时间范围](#1534-数值日期和时间范围min-和-max)：min、max  
+> * [设置步长](#1535-步长step)：step  
+> * [正则表达式验证](#1536-正则表达式pattern)：pattern  
+> * [禁用表单验证](#1537-禁用表单验证)：novalidate、formnovalidate  
 
 [back to Contents]
 
@@ -854,12 +855,11 @@ Output标签的使用
  </form>
 ```
 
-
 [back to Contents]
 
 ##### 1.5.3.2 必填字段（[required]）
 
-Required 是 boolean 类型的属性，表示该字段为必填内容，所有 input 属性都可以添加 required 属性（type属性值为 button、submit、reset、image 时除外）
+required 是 boolean 类型的属性，表示该字段为必填内容，所有 input 属性都可以添加 required 属性（type属性值为 button、submit、reset、image 时除外）
 
 ```html
 <form action="success.html" method="post">
@@ -870,13 +870,12 @@ Required 是 boolean 类型的属性，表示该字段为必填内容，所有 i
  // 当用户不填写姓名或年龄而直接提交表单时，会提示字段不能为空
 ```
 
-
 [back to Contents]
 
 ##### 1.5.3.3 字符长度（[minlength] 和 [maxlength]）
 
-Minlength 表示最短字符的限定，当未达到最短字符限定长度时浏览器会提示位数不够  
-Maxlength 表示最长字符限定，当达到最长字符限定时浏览器会禁止用户输入  
+minlength 表示最短字符的限定，当未达到最短字符限定长度时浏览器会提示位数不够  
+maxlength 表示最长字符限定，当达到最长字符限定时浏览器会禁止用户输入  
 很多 input 元素的共有属性：text、search、password、email、url、tel  
 
 ```html
@@ -889,13 +888,12 @@ Maxlength 表示最长字符限定，当达到最长字符限定时浏览器会�
 // 输入长度限定在 6-20 位之间（包含边界）
 ```
 
-
 [back to Contents]
 
 ##### 1.5.3.4 数值\日期和时间范围（[min] 和 [max]）
 
-Min 输入的数值的最小限定值  
-Max 输入的数值的最大限定值  
+min 输入的数值的最小限定值  
+max 输入的数值的最大限定值  
 当用户输入的值不在限定范围内，浏览器会有相应的提示  
 可以限定 number、range 和日期和时间类型的值  
 
@@ -912,14 +910,13 @@ Max 输入的数值的最大限定值
 </form>
 ```
 
-
 [back to Contents]
 
 ##### 1.5.3.5 步长（[step]）
 
-步长，即每次增长的数值大小，适用于number、range数字类型
+步长，即每次增长的数值大小，适用于 number、range 数字类型
 
-Step 限定数值变化的步长
+step 限定数值变化的步长
 
 ```html
 <form action="success.html" method="post">
@@ -938,13 +935,12 @@ Step 限定数值变化的步长
 //range 滑动条中，拖动滑块，每次改变一个步长的值
 ```
 
-
 [back to Contents]
 
 ##### 1.5.3.6 [正则表达式]（[pattern]）
 
 pattern 值为正则表达式，当用户输入的内容不符合正则表达式时浏览器会提示错误信息  
-Pattern 属性是所有可输入 input 元素的共有属性  
+pattern 属性是所有可输入 input 元素的共有属性  
 
 ```html
  <!--pattern属性中需要一个正则表达式-->
@@ -954,7 +950,6 @@ Pattern 属性是所有可输入 input 元素的共有属性
 </form>
 // 当用户输入的内容不符合正则表达式时浏览器会提示错误信息
 ```
-
 
 [back to Contents]
 
@@ -994,15 +989,15 @@ Pattern 属性是所有可输入 input 元素的共有属性
 
 #### 1.5.4 新增表单属性
 
-> 以下新增属性在 HTML5 表单验证中已提及
+> 以下新增属性在 [HTML5 表单验证](#153-html5-表单验证)中已提及
 >
-> * list
-> * required
-> * minlength 和 maxlength
-> * min 和 max
-> * step
-> * pattern
-> * novalidate 和 formnovalidate
+> * [list](#152-新增表单元素)
+> * [required](#1532-必填字段required)
+> * [minlength 和 maxlength](#1533-字符长度minlength-和-maxlength)
+> * [min 和 max](#1534-数值日期和时间范围min-和-max)
+> * [step](#1535-步长step)
+> * [pattern](#1536-正则表达式pattern)
+> * [novalidate 和 formnovalidate](#1537-禁用表单验证)
 
 [back to Contents]
 
@@ -1017,9 +1012,9 @@ Pattern 属性是所有可输入 input 元素的共有属性
 
 ##### 1.5.4.2 autofocus（自动获取焦点）
 
-Autofocus 属性是一个 boolean 属性  
+autofocus 属性是一个 boolean 属性  
 表单控件会在页面加载时自动获取焦点  
-适用于text、search、url、tel、email、number、password、日期时间控件  
+适用于 text、search、url、tel、email、number、password、日期时间控件  
 一个页面只能有一个 aurofocurs 属性（如果有多个，只有第一个会被应用）  
 `<input type="text" autofocus>// 在页面加载时 text 文本款就会获得焦点`  
 
@@ -1027,7 +1022,7 @@ Autofocus 属性是一个 boolean 属性
 
 ##### 1.5.4.3 autocomplete（自动完成）
 
-Autocomplete 的值为 `on`（默认值）时，表示开启自动完成，浏览器会自动保留填写记录，下次填写时可选择已有记录快速填写  
+autocomplete 的值为 `on`（默认值）时，表示开启自动完成，浏览器会自动保留填写记录，下次填写时可选择已有记录快速填写  
 Autocomplete 的值为 `off` 时，表示关闭自动完成，浏览器不会保留填写记录。  
 Autocomplete 支持所有可输入标签  
 
