@@ -53,7 +53,30 @@
         * [1.5.4 新增表单属性](#154-新增表单属性)
     * [1.6 HTML5 中的全局属性](#16-html5-中的全局属性)
 * [2. CSS3](#2-css3)
+    * [2.1 border-radius（边框圆角属性）](#21-border-radius边框圆角属性)
+    * [2.2 box-shadow（盒子阴影）](#22-box-shadow盒子阴影)
+    * [2.3 CSS3 文本属性](#23-css3-文本属性)
+        * [2.3.1 text-shadow（文本阴影）](#231-text-shadow文本阴影)
+        * [2.3.2 text-overflow（文本溢出）](#232-text-overflow文本溢出)
+        * [2.3.3 word-break 和 word-wrap（文字溢出）](#233-word-break-和-word-wrap文字溢出)
+    * [2.4 CSS3 颜色属性](#24-css3-颜色属性)
+        * [2.4.1 三种旧的颜色表示法](#241-三种旧的颜色表示法)
+        * [2.4.2 CSS3 中新增的颜色表示法](#242-css3-中新增的颜色表示法)
+        * [2.4.3 CSS 不透明度](#243-css-不透明度)
+        * [2.4.4 CSS 中的渐变](#244-css-中的渐变)
+    * [2.5 CSS3 中“盒子”的尺寸](#25-css3-中盒子的尺寸)
+    * [2.6 CSS3 中背景的新特性](#26-css3-中背景的新特性)
+        * [2.6.1 CSS3 为一个元素设置多张背景图片（background-image）](#261-css3-为一个元素设置多张背景图片background-image)
+        * [2.6.2 CSS3 为图片重新定义一个尺寸（background-size）](#262-css3-为图片重新定义一个尺寸background-size)
+        * [2.6.3 CSS3 中定义背景图片的定位区域（background-origin）](#263-css3-中定义背景图片的定位区域background-origin)
+        * [2.6.4 CSS3 定义图片的剪裁区域（background-clip）](#264-css3-定义图片的剪裁区域（background-clip）)
+    * [2.7 Web 字体](#27-web-字体)
+    * [2.8 CSS3 中的 2D 转换](#28-css3-中的-2d-转换)
+    * [2.9 CSS3 过度](#29-css3-过度)
+    * [2.10 CSS3 动画](#210-css3-动画)
 * [参考链接](#参考链接)
+
+* []()
 
 ## 内容简介
 
@@ -499,9 +522,9 @@ data=”zq.swf width=”500” height=”430””></object >
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
     width="500" height="430">
     <param name="src" value="zq.swf" />//兼容低版本IE
-        <object type="application/x-shockwave-flash"
-                data="zq.swf" width="500" height="430">
-        </object>
+    <object type="application/x-shockwave-flash"
+        data="zq.swf" width="500" height="430">
+    </object>
 </object>
 ```
 
@@ -819,7 +842,6 @@ output标签的使用
 
 ```html
 <form oninput="x.value=a.value">
-    
     <input type="range" name="a" value="0">
     <output name="x" >0</output>
 </form>
@@ -848,10 +870,10 @@ output标签的使用
 
 ```html
 <form action="success.html" method="post">
-        <div>数字：<input type="number"></div>
-        <div>邮箱：<input type="email"></div>
-        <div>网址：<input type="url"></div>
-        <div><input type="submit"></div>
+    <div>数字：<input type="number"></div>
+    <div>邮箱：<input type="email"></div>
+    <div>网址：<input type="url"></div>
+    <div><input type="submit"></div>
  </form>
 ```
 
@@ -863,9 +885,9 @@ required 是 boolean 类型的属性，表示该字段为必填内容，所有 i
 
 ```html
 <form action="success.html" method="post">
-        <div>姓名：<input type="text" required></div>
-        <div>年龄：<input type="number" required></div>
-        <div><input type="submit"></div>
+    <div>姓名：<input type="text" required></div>
+    <div>年龄：<input type="number" required></div>
+    <div><input type="submit"></div>
  </form>
  // 当用户不填写姓名或年龄而直接提交表单时，会提示字段不能为空
 ```
@@ -1111,10 +1133,10 @@ HTML5 中的新功能
 
 <form>
     <input type="submit"
-           formaction="success.html"
-           formmethod="post"
-           formtarget="_blank"
-           formenctype="application/x-www-form-urlencoded">
+        formaction="success.html"
+        formmethod="post"
+        formtarget="_blank"
+        formenctype="application/x-www-form-urlencoded">
 </form>
 // 当 form 标签和 submit 按钮中同时出现相同功能的按钮时，以 submit 按钮的属性值为准。
 ```
@@ -1143,17 +1165,17 @@ HTML5 中的新功能
 ```html
 <div>
 	<a href="http://edu.51cto.com/course/course_id-3116.html"
-    accesskey="a" target="_blank">
+        accesskey="a" target="_blank">
   	    HTML和CSS 6小时入门经典
 	</a>
 </div>
 <div>
- 	<a href="http://edu.51cto.com/course/course_id-3282.html" accesskey="b" target="_blank">
-   		HTML5和CSS3新特性快速参考
+ 	<a href="http://edu.51cto.com/course/course_id-3282.html"           accesskey="b" target="_blank">
+   	    HTML5和CSS3新特性快速参考
  	 </a>
 </div>
 <div>
- 	<label for="username">用户名</label><input type="text" id="username" accesskey="c">
+ 	<label for="username">用户名</label><input type="text"                  id="username" accesskey="c">
 </div>
 // 激活这些标签的键盘快捷键分别是 a,b,c
 ```
@@ -1168,17 +1190,17 @@ HTML5 中的新功能
 
 ```html
 <div>
-    <a href="http://edu.51cto.com/course/course_id-3116.html" tabindex="3" target="_blank">
+    <a href="http://edu.51cto.com/course/course_id-3116.html"           tabindex="3" target="_blank">
         HTML和CSS 6小时入门经典
     </a>
 </div>
 <div>
-    <a href="http://edu.51cto.com/course/course_id-3282.html" tabindex="2" target="_blank">
+    <a href="http://edu.51cto.com/course/course_id-3282.html"           tabindex="2" target="_blank">
         HTML5和CSS3新特性快速参考
     </a>
 </div>
 <div>
-    <label for="username">用户名</label><input type="text" id="username" tabindex="1">
+    <label for="username">用户名</label><input type="text"                  id="username" tabindex="1">
 </div>
 // 定义 tab 访问元素的次序
 ```
@@ -1251,22 +1273,526 @@ HTML5 中的新功能
 
 [back to Contents]
 
-## 2. CSS3
+## 2. [CSS3]
+
+[CSS3]: https://developer.mozilla.org/zh-CN/docs/Web/CSS
+
+### 2.1 border-radius（边框圆角属性）
+
+值的设置规则
+
+1. 一个值：四个圆角值相同
+2. 两个值：第一个值为左上角与右下角、第二个值为右上角与左下角
+3. 三个值：第一个值为左上角、第二个值为右上角和左下角、第三个值为右下角
+4. 四个值：第一个值为左上角、第二个值为右上角、第三个值为右下角、第四个值为左下角
+
+使用百分比  
+
+`border-radius:50%;` 表示圆角半径分别是 height 和 width 的 50%，可绘制出一个椭圆形（width != height）或圆形（height = width）  
+`border-radius:50px/15px;` 第一个值表示圆角的横轴半径，第二个值表示圆角的纵轴半径，就会在“盒子“的每个角产生椭圆圆角  
+
+[back to Contents]
+
+### 2.2 box-shadow（盒子阴影）
+
+属性：`box-shadow: inset 横向偏移量 纵向偏移量 模糊范围 扩展范围 阴影颜色;`  
+
+1. **`inset`**: 内阴影，如果不设置这个值，那么阴影会显示在“盒子”的外部；如果设置了这个值，那么阴影会显示在”盒子“的内部（内阴影），`inset` 属性也可放在所有属性的最后。
+2. **横向偏移量**：必选值，表示阴影相对于“盒子“的横向偏移量，设置为正值时表示阴影相对于”盒子“向右偏移，设置为负值时相反，值越大偏移量越大
+3. **纵向偏移量**：必选值，表示阴影相对于“盒子“的纵向偏移量，设置为正值时表示阴影相对于”盒子“向下偏移，设置为负值时相反，值越大偏移量越大
+4. **模糊范围**：可选值，表示阴影的模糊范围，不设置这个值或设置为零时阴影没有模糊效果，值越大，阴影模糊范围越大，颜色越浅
+5. **扩展范围**：可选值，表示阴影的范围，值越小阴影的范围就越小，值越大阴影的范围就越大。
+6. **阴影的颜色**：可选值（默认为黑色），表示阴影的颜色。
+
+值的设置规则：可用逗号将多组阴影的效果分开
+
+[back to Contents]
+
+### 2.3 CSS3 文本属性
+
+#### 2.3.1 text-shadow（文本阴影）
+
+属性：`text-shadow: 横向偏移量 纵向偏移量模糊范围 阴影颜色;`（与 `box-shadow` 相似）  
+
+1. **横向偏移量**、**纵向偏移量**：必选值
+2. **模糊范围**：可选值，默认值是零
+3. **阴影颜色**：可选值，默认与文字颜色相同
+
+[back to Contents]
+
+#### 2.3.2 text-overflow（文本溢出）
+
+使用情景：在文本所”盒子“的长度无法容纳下此文本时，浏览器会将文本自动换行自动换，若不想将文本换行（可使用 `overflow：hidden` 会将多于部分显示在”盒子外部“），又不想文本超出”盒子“显示，则可使用 `text=overflow` 属性，浏览器会将多于部分截断而只显示能将”盒子“填满的文本内容。
+
+属性的值  
+
+`clip`：默认值，只截断显示文本  
+`ellipsis`：截断文本并在文本末端显示省略号  
+
+[back to Contents]
+
+#### 2.3.3 word-break 和 word-wrap（文字溢出）
+
+使用情景：当有一个超长的单词（文本超出“盒子“的长度）时浏览器不会将其换行，而是让其超出“盒子”显示，如要让此单词换行显示可使用 `word-break` 或 `word-wrap` 属性。（与 `text-overflow` 不同）  
+
+使用方法：
+
+1. `word-break：break-all`：超长单词会接着前一个单词后填充。当达到“盒子“最大长度时，将超长单词剩余部分换行显示。
+2. `word-wrap：break-word`：超长单词会在前一个单词的下一行开始显示（不论前一个单词是否将上一行填满），若超长单词的长度超出“盒子“的长度则将单词的剩余部分再换一行显示。
+
+[back to Contents]
+
+### 2.4 CSS3 颜色属性
+
+#### 2.4.1 三种旧的颜色表示法
+
+1. **关键字颜色**：red
+2. **十六进制颜色**：#FF0000
+3. **RGB 颜色**：rgb(255,0,0)
+
+[back to Contents]
+
+#### 2.4.2 CSS3 中新增的颜色表示法
+
+1. RGBa 颜色  
+解释：**RGB** 表示光的三原色 `red（红色）` `green（绿色）` `blue（蓝色）`  
+CSS3 中新增一个值 **a（alpha）**：表示颜色透明度，a 的值越小表示越透明，值为零时表示完全透明。值为 1 时表示完全不透明。  
+
+2. HSL颜色  
+解释：
+    1. **H(hue)** 表示色相，用一个环表示不同颜色  
+        1. 取值范围：0-360  
+        2. 0 和 360 为红色  
+        3. 30 是橙色  
+        4. 180 是绿色  
+        5. 240 是蓝色  
+具体参见有图：  
+![css-css色环](img/css-css色环.png)
+    2. **S(saturation)** 表示饱和度，表示色彩的鲜艳程度
+        1. 取值范围：0%到100%
+        2. 饱和度越高，色彩越鲜艳
+        3. 饱和度越低，色彩越暗淡
+        4. 完全不饱和的颜色没有色相，如黑白之间的各种灰色
+    3. **L(lightness)** 表示亮度，控制色彩的明暗变化
+        1. 取值范围：0%到100%
+        2. 数值越小，色彩越暗，越接近于黑色
+        3. 数值越大，色彩越亮，越接近于白色
+3. HSLa颜色：
+    1. **a（alpha）**：表示透明度，用法与RGBa中a的用法完全一样
+
+> PS  
+> RGB 颜色值和 十六进制颜色 值都是通过调整三原色比例来调整颜色  
+> HLS 通过色相，饱和度和亮度来调整颜色，是通过人对颜色的自然感知来调整，调色更容易  
+
+[back to Contents]
+
+#### 2.4.3 CSS 不透明度
+
+`opacity` 属性：用于设置不透明度  
+
+1. 取值范围：0-1
+2. 0 表示完全透明
+3. 1 表示完全不透明
+
+> PS
+> 当为一个元素设置了 `opacity` 属性时，会影响到这个元素本身以及这个元素的所有子孙元素  
+> IE8 以及 IE8 以下的 IE浏览器 不支持 opacity 属性，但可以使用以下代码实现相同的效果：`filter：alpha(opacity=值);` 值的范围是 0-100  
+> 兼容所有的浏览器要同时使用 opacity 和 filter 属性如：`opacity:0.45; filter:alpha(opacity=45);`
+
+[back to Contents]
+
+#### 2.4.4 CSS 中的渐变
+
+渐变：在两个或多个颜色之间进行平滑的过度  
+CSS3 提供了创建颜色简便的方式  
+
+浏览器支持两种简便的方案：
+
+1. **径向渐变**：从元素中心开始向四周放射性渐变，呈椭圆形，默认情况下椭圆的大小会自动匹配所在元素的大小 `radial-gradient(形状 大小 at 位置，第一个颜色，第二个颜色···);`
+    1. **形状**：可选值，circle（圆形）、ellipse（椭圆形，默认值）
+    2. **大小**：可选值，使用长度（如10px）或百分比（如50%）表示简便的大小  
+如：`background：radial-gradient(50px, aqua，blue);`表示径向简便的渐变直径是 50px；  
+`background：radial-gradient(80% 20%, aqua，blue);`表示径向渐变的长度是所在元素长度的 80%，宽度是所在元素高度的 20%。  
+    3. **at 位置**：可选值，简便开始的位置，center（默认值）left、right、top、button、left top、right top、left bottom 、right bottom
+2. **线性渐变**：`background: linear-gradient(to 渐变的方向，渐变的第一个颜色，渐变的第二个颜色···);`
+    1. **渐变方向（用方向名称表示）**：Left（左）、right（右）、top（上）、bottom（下）、Left top（左上）、right to（右上）、left bottom（左下）、right bottom（右下）
+    2. **渐变方向（用数字表示角度）**：
+        1. 取值范围：0-100
+        2. 单位：deg（degree 的缩写）渐变方向如图  
+        ![渐变方向](img/css-渐变方向.png)
+        3. **颜色列表**：两个或多个颜色的组合，用逗号分开，可以用任何颜色表示方法表示颜色。
+
+```css
+div { width:200px; height: 200px; border-radius: 50%; /* 边框圆角为50%,为圆形 */
+      background: radial-gradient(at left top, aqua, blue); /* 径向渐变会产生有立体视觉效果的球形(见右图) */
+}
+```
+
+![立体效果](img/css-立体效果.png)
+
+[back to Contents]
+
+### 2.5 CSS3 中“盒子”的尺寸
+
+1. `box-sizing`属性：用来改变合模式中盒子的高度和宽度的默认的计算方式
+2. 盒模式：HTML 中每个元素都是一个盒子，由 4 部分组成
+    1. 内容区域
+    2. 内边距 padding
+    3. 边框 border
+    4. 外边距 margin
+3. 盒子的总宽度 = 内容区域 + padding + border + margin
+4. 盒子的总高度 = 内容区域 + padding + border + margin
+5. 图中的代码样式如下
+
+```css
+width: 300px;
+height: 100px;
+padding: 10px;
+border: 2px;
+margin: 20px;
+box-sizing: content-box
+// 默认值，此时 width 和 height 只表示内容区域的宽和高
+```
+
+![css盒模型1](img/css-css盒模型1.png)
+
+图中的代码样式如下
+
+```css
+width: 300px;
+height: 100px;
+padding: 10px;
+border: 2px;
+margin: 20px;
+box-sizing: border-box
+// 此时 width 和 height 表示内容区域 + padding + border 的宽和高的总和
+```
+
+![css盒模型2](img/css-css盒模型2.png)
+
+[back to Contents]
+
+### 2.6 CSS3 中背景的新特性
+
+#### 2.6.1 CSS3 为一个元素设置多张背景图片（background-image）
+
+CSS3 允许为一个元素设置多张背景图片，用逗号分开多张图片的属性值，先定义的图片会显示在宏定义的图片的前面  
+`background-image: url(“1. png”),url(“2.png”);` 1.png 会显示在 2.png 的前面  
+`background-position: top left, center right;` top left 是 1png 的属性，center right 是 2.png 的属性，属性与图片是一一对应的  
+`background-repeat: no-repeat, no-repeat;` 同理  
+
+```css
+background: 
+url(“1.png”) top left no-repeater,
+url(“2.png”) center right no-repeater;
+// 实现的效果同上
+```
+
+[back to Contents]
+
+#### 2.6.2 CSS3 为图片重新定义一个尺寸（background-size）
+
+`background—size` 值的四种形式  
+
+1. **长度**：设置背景图片的高度和宽度，第一个值为宽度，第二个值为高度，如果只设置了一个值，那么第二个值为“auto”自动
+2. **百分比**：设置背景图片的高度和宽度分别是当前元素的百分比值
+3. **cover**：保持图片的长宽比例，并将图片缩放到刚好能完全覆盖所在区域的最小大小 // 当设置了 `no-repeater` 属性时，图片通常会超出元素而无法完全显示在元素中
+4. **contain**：保持图像的长宽比例，并且图像缩放成刚好完全显示在所在区域内的最大大小 // 当设置了 `no-repeater` 属性时，图像一定会完全显示在元素中，但通常不能充满元素区域而留有空白。
+
+[back to Contents]
+
+#### 2.6.3 CSS3 中定义背景图片的定位区域（background-origin）
+
+`background-origin` 的值  
+
+1. `border-box` 背景图片以边框为基准定位
+
+图中的代码如下：
+
+```css
+width: 250px;
+height: 150px;
+padding: 30px;
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater;
+border-origin: border-box;
+// 背景图片会渗入到边框中显示
+```
+
+![border-origin:border-box](img/css-border-origin-border-box.png)
+
+2. `padding-box`（默认值）背景图片会在边框内测（padding区域）定位显示
+
+图中的代码如下：  
+
+```css
+width: 250px;
+height: 150px; 
+padding: 30px;
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater;
+border-origin: padding-box;
+// 背景图片会在边框内测定位显示
+```
+
+![border-origin:padding-box](img/css-border-origin-padding-box.png)
+
+3. `content-box` 背景图片会显示在元素的内容区域
+
+图中的代码如下：
+
+```css
+width: 250px;
+height: 150px; 
+padding: 30px; 
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater；
+border-origin: content-box;
+// 背景图片显示在元素的内容区域
+```
+
+![border-origin:content-box](img/css-border-origin-content-box.png)
+
+#### 2.6.4 CSS3 定义图片的剪裁区域（background-clip）
+
+`background-clip` 的值
+
+1. `border-box`（默认值）剪裁超出元素边框的背景图片
+
+图中的代码如下：
+
+```css
+width: 250px;
+height: 150px; 
+padding: 30px; 
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater；
+border-origin: border-box;
+background-clip: border-box;
+// 超出元素边框的背景图片会被裁剪
+```
+
+![background-clip:border-box](img/css-background-clip-border-box.png)
+
+2. `padding-box` 剪裁超出元素内边距区域的背景图片
+
+图中的代码如下：
+
+```css
+width: 250px;
+height: 150px; 
+padding: 30px; 
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater；
+border-origin: border-box;
+background-clip: padding-box;
+// 超出元素内边框的背景图片会被裁剪
+```
+
+![background-clip:padding-box](img/css-background-clip-padding-box.png)
+
+3. `content-box` 剪裁超出元素内容区域的背景图片
+
+右图中的代码如下：
+
+```css
+width: 250px;
+height: 150px; 
+padding: 30px; 
+margin: 10px; 
+border: 30px dotted #CC0000;
+background-image: url(1.png) no-repeater；
+border-origin: border-box;
+background-clip: content-box;
+// 超出元素内容区域的推片会被裁剪
+```
+
+![background-clip:content-box](img/css-background-clip-content-box.png)
+
+> PS: `background` 属性的完整简写形式  
+> `background: 背景颜色 背景图片 是否平铺 图片位置/图片尺寸 定位区域 剪裁区域`  
+
+[back to Contents]
+
+### 2.7 Web 字体
+
+`font-family: 字体名1，字体名2···，sans-serif;`  
+以上 `font-family` 属性后放置了一个字体系列，在页面加载时浏览器会依序从第一种字体开始加载，如用户计算机中有第一种字体，浏览器就会将设置了该字体的元素的文本以该字体显示；如果用户计算机中没有该字体，那么浏览器会查找第二种字体，以此类推，直到找到一种字体为止；若在用户计算机中找不到任何一种相匹配的字体，浏览器会在字体系列中找一种默认的字体。  
+
+特殊字体的使用  
+
+1. 方法一：使用图片代替文字
+2. 方法二：使用 web 字体: `@font-face` 规则
+    1. 下载 web 字体
+    2. 确保找到所有需要的字体格式
+
+| 字体格式 | 扩展名 | 说明 |
+| :----: | :---: | ---- |
+| Truetype | .ttf | 中文名称全真字体，由 apple 公司和 microsoft 公司联合提出
+| Opentype | .otf | 建立在 truetype 基础之上
+| Embedded | .eot | Opentype 的一种压缩形式，微软专用，仅IE支持
+| SVG 字体 | .svg | SVG 是一种通用图像格式，SVG 字体是使用这种格式显示字符
+| Web开放字体 （web open font format）| .woff | 建立在 truetype 基础之上，已经发展为 web 字体的一个事实标准，如今所有现代的浏览器对 woff 格式提供了支持
+    3. 将准备好的文件放在web服务器上
+    4. 在 css 中定义 `@font-face` 规则
+
+```css
+@font-face{
+    Font-family: “name”; 
+    /* name：指定一个自提名以便以后使用 */
+    Src: url(“url1”),
+    Src: url(“url2”)…; 
+    /* url1、url2 等：字体文件的地址 */
+}
+```
+
+    4. 在 css 中使用字体 `font-family: name;`
+
+[back to Contents]
+
+### 2.8 CSS3 中的 2D 转换
+
+1. 转换: transform
+    1. translate（移动）
+    2. rotate（旋转）
+    3. scale（缩放）
+    4. skew（倾斜）
+2. 2D 转换：在二维空间内转换
+    1. `translate(x, y)`：使用 `transform` 中的 2D转换函数 `translate` 将元素在 x 轴和 y 轴上进行移动
+        1. x：x 轴的移动距离，可以是长度值，也可以是百分比值，也可用 `translateX` 函数单独设置
+        2. y：y 轴的移动距离，可以是长度值，也可以是百分比值，可选，默认为 0，`translateY` 单独设置
+    2. `rotate()`：函数 `rotate` 可根据指定的角度旋转元素，  
+        单位：deg（度），正数表示顺时针旋转，负数表示逆时针旋转
+    3. `scale(x,y)`：函数 `scale` 可将元素放大或缩小
+        1. x：表示在 x 轴的放大倍数，可用 `scaleX` 函数单独设置
+        2. y：表示在 y 轴的放大倍数，可选值，默认与 x 的值相同，可用 `scaleY` 函数单独设置
+    4. `skew(X,Y)`：将元素沿 x 轴和 y 轴倾斜显示
+        1. x：表示沿 x 轴倾斜的角度，可用 `scaleX` 单独设置
+        2. y：表示沿 y 轴倾斜的角度，可选默认为 0，可用 `scaleY` 单独设置
+    5. `matrix(a, b, c, d, e, f)`：转换基准点 `transform-origin：X,Y,Z`
+        1. CSS 中默认的转换基准点是元素的中心点，使用 `transform-origin` 属性可以更改元素的转换基准点。
+        2. x：表示在 x 轴的转换基准点，默认值为 50%（center），可能值：left right center 长度 百分比
+        3. y：表示在 y 轴的转换基准点，默认值为 50%（center），可能值：top bottom center 长度 百分比
+        4. z：表示在 z 轴的转换基准点，默认值为 0，可能值：长度
+3. 3D 转换：在三维空间内转换
+
+> PS：可在 `transform` 属性中使用多个函数，函数之间用空格分开
+
+[back to Contents]
+
+### 2.9 CSS3 过度
+
+过度：一个元素在不同的状态之间进行平滑的转换（`transition` 实现）  
+`transition` 属性的用法  
+`transition: 过度属性 执行时间 时间函数 延迟时间`  
+1. **过度属性（`transition-property`）**：可选值，all（默认值）表示所有，指定将要进行过度变换的 CSS 属性，可分别设置每个属性过度效果的执行时间等值，不同过度属性的值的设置用逗号分开。  
+2. **执行时间（`transition-duration`**）：可选值，0s（默认值），指定过度效果从开始执行到结束使用的时间
+3. **时间函数（`transition-timingfunction`）**：可选值，设置元素运动的速度(最复杂，涉及贝塞尔曲线)
+    1. **贝塞尔曲线和时间函数**(cubic-bezier（p1x, P1Y, P2X, P2Y）)  
+        贝塞尔曲线关键字
+        1. **ease**(默认值)：cubic-bezier（0.25, 0.1, 0.25, 1. 0）起步慢，立刻快，慢停稳
+        2. **linear**（线性的）：cubic-bezier（0, 0, 1, 1）匀速运动
+        3. **ease-in**：cubic-bezier (0. 42, 0, 1, 1) 嫌慢，后逐渐变快
+        4. **ease-out**：cubic-bezier (0. 0. 0.58. 1) 先快，后逐渐变慢
+        5. **ease-in-out**：cubic-bezier (0.42. 0. 0.58. 1) 两边慢，中间快
+    2. **步骤函数（`steps()`）**
+        1. transition: 2s steps(2, start) // 动画分 2 步进行，且在每段时间开始时执行
+        2. transition: 3s steps(3, end) // 动画分 3 步执行，且在每段时间结束时执行
+        3. 如果有 transition: 3s steps(1, start) 可写成 transition: 3s steps-start // 一步执行，同理 steps（1，end）可写成 steps-end
+4. **延迟时间（`transition-delay`）**：可选值，0s（默认值），设置多长时间后开始执行过度
+
+[back to Contents]
+
+### 2.10 CSS3 动画
+
+1. **逐帧动画**：组成动画的每一个画面就是一个帧
+2. **关键帧动画（过度动画）**：`@keyframes` 规则 `animation` 属性，webkit浏览器要加 `-webkit-` 前缀（如 safari chrome 浏览器）`@-webkit-keyframes` 规则 `-webkit-animation` 属性（<=IE9的浏览器哪一种都不支持）
+
+```css
+/* 简单的例子 */
+div{
+    width: 50px; height: 50px; background-color: green;
+}
+@keyframes myAnimat{ // myAnimat 是定义动画的名字，方便使用
+    form{ width: 50px;}	// from 定义关键帧动画的起始状态
+    to{ width: 200px;}	// to 定义关键帧动画的结束状态
+}
+@-webkit-keyframes myAnimat{ // 为了兼容所有的浏览器再定义一个相同的动画
+    form{ width: 50px;}	// from 定义关键帧动画的起始状态
+    to{ width: 200px;}	// to 定义关键帧动画的结束状态
+}
+div: hover{
+    animation-name: myAnimat; // 使用 myAnimat 动画
+    animation-duration: 2s; // 动画持续 2 秒,与 CSS3 过度中的transition-duration 相同
+}
+/* 也可以用百分比定义关键帧动画的关键帧 */
+@keyframes animat2{
+    0% {width: 50px} // 第一帧动画，刚开始时
+    50% { width: 100px} // 中间时刻的关键帧（如总时间为 2s，此为 1s 时的关键帧）
+    100% { width: 200px;} // 最后一刻（动画结束时）的关键帧
+} // 可定义多个时刻的关键帧，无限制
+```
+
+1. 时间函数  
+`[-webkit-]animation-timing-function` 与 CSS3 过度中的`transition-timingfunction` 用法相同
+2. 延迟函数  
+`[-webkit-]animation-delay` 与 CSS3 过度中的 `transition-delay` 用法相同
+3. 动画执行次数：
+`animation-iteration-count: 正整数 | infinite;` // 正整数定义次数（默认为 1，`infinite` 表示正无穷）
+4. 动画播放的方向：`animation-direction`
+    1. `mormal`(默认值)
+    2. `reverse`(动画反方向播放)
+    3. `alternate`(第一次正常播放，第二次反向播放)
+    4. `alternate—reverse`(第一次反向播放，第二从正向播放)
+5. 动画播放前后的状态：`animation-fill-mode`
+    1. `none`(默认值)
+	2. `backwards`(设置播放之前元素的状态与第一帧的状态相同，而不是元素的默认状态)
+	3. `forwards`(设置元素播放之后的状态与最后一帧的状态相同，而不是元素的默认状态)
+	4. `both`(同时结合 `backwards` 和 `forwards` 的属性)
+6. 控制动画运行或暂停：`animation-play-state`
+    1. `running`(默认值，播放)
+    2. `paused`（暂停）
+
+> `animation` 属性的简写形式：`animation: animation-name animation-duration animation-delay` …  
+> 至少有 `animation-name` 和 `animation-duration` 两个属性，
+`animation-duration` 必须在 `animation-delay` 之前，其他无限制
+
+[back to Contents]
 
 ---
 
 ## 参考链接
 
+兼容性：  
+
 [Can I Use](https://caniuse.com)  
+
+web 技术文档：  
+
 [MDN Web 文档](https://developer.mozilla.org/zh-CN/)  
 [MDN Web 文档 - 教程](https://developer.mozilla.org/zh-CN/docs/Web/Tutorials)  
+
+HTML：  
+
 [MDN Web 文档 - HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML)  
 [MDN Web 文档 - HTML5](https://developer.mozilla.org/zh-CN/docs/HTML/HTML5)  
-[MDN Web 文档 - HTML元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)  
+[MDN Web 文档 - HTML 元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)  
 [MDN Web 文档 - HTML 属性参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Attributes)  
-[MDN Web 文档 - HTML表单指南](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms)  
+[MDN Web 文档 - HTML 表单指南](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms)  
 [MDN Web 文档 - 校验属性](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5/Constraint_validation)  
 [MDN Web 文档 - 发送表单数据](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data)  
 [MDN Web 文档 - 表单数据验证](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Form_validation)  
 [MDN Web 文档 - 原生表单小部件](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/The_native_form_widgets)  
 [MDN Web 文档 - 表单组件兼容性列表](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Property_compatibility_table_for_form_widgets)  
+
+CSS： 
+
+[MDN Web 文档 - CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS)  
+[MDN Web 文档 - CSS 参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference)  
+[MDN Web 文档 - CSS 教程](https://developer.mozilla.org/zh-CN/docs/Learn/CSS)  
+[MDN Web 文档 - CSS 动画](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations/Using_CSS_animations)  
