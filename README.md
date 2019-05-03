@@ -3,7 +3,7 @@
 [Word版本]:                     Doc/HTML5-CSS3%20基础笔记.doc
 [back to Contents]:            #目录contents
 
-> 这个笔记是我几年前在网上看的一门课程的笔记（课程平台及地址已经忘了，毕竟有几年了，请谅解，如有知晓课程出处的请在 issue 中留言，非常感谢）。此笔记原为 [Word版本]，现改为 md版本，并添加部分代码示例，温故而知新，也便于以后的查找。  
+> 这个笔记是我几年前在网上看的一门课程的笔记（课程平台及地址已经忘了，毕竟有几年了，请谅解，如有知晓课程出处的请在 issue 中留言，非常感谢）。此笔记原为 [Word版本]，现改为 md版本，温故而知新，也便于以后的查找。  
 
 ## 目录（Contents）
 
@@ -1411,7 +1411,7 @@ CSS3 提供了创建颜色简便的方式
 1. **径向渐变**：从元素中心开始向四周放射性渐变，呈椭圆形，默认情况下椭圆的大小会自动匹配所在元素的大小 `radial-gradient(形状 大小 at 位置，第一个颜色，第二个颜色···);`
     1. **形状**：可选值，circle（圆形）、ellipse（椭圆形，默认值）
     2. **大小**：可选值，使用长度（如10px）或百分比（如50%）表示简便的大小  
-如：`background：radial-gradient(50px, aqua，blue);`表示径向简便的渐变直径是 50px；  
+如：`background：radial-gradient(50px, aqua，blue);`表示径向简便的渐变直径是 50px:  
 `background：radial-gradient(80% 20%, aqua，blue);`表示径向渐变的长度是所在元素长度的 80%，宽度是所在元素高度的 20%。  
     3. **at 位置**：可选值，简便开始的位置，center（默认值）left、right、top、button、left top、right top、left bottom 、right bottom
 2. **线性渐变**：`background: linear-gradient(to 渐变的方向，渐变的第一个颜色，渐变的第二个颜色···);`
@@ -1549,7 +1549,7 @@ height: 150px;
 padding: 30px;
 margin: 10px;
 border: 30px dotted #CC0000;
-background-image: url(1.png) no-repeater；
+background-image: url(1.png) no-repeater;
 border-origin: content-box;
 // 背景图片显示在元素的内容区域
 ```
@@ -1584,11 +1584,11 @@ background-clip: border-box;
 
 ```css
 width: 250px;
-height: 150px; 
-padding: 30px; 
-margin: 10px; 
+height: 150px;
+padding: 30px;
+margin: 10px;
 border: 30px dotted #CC0000;
-background-image: url(1.png) no-repeater；
+background-image: url(1.png) no-repeater;
 border-origin: border-box;
 background-clip: padding-box;
 // 超出元素内边框的背景图片会被裁剪
@@ -1602,11 +1602,11 @@ background-clip: padding-box;
 
 ```css
 width: 250px;
-height: 150px; 
-padding: 30px; 
-margin: 10px; 
+height: 150px;
+padding: 30px;
+margin: 10px;
 border: 30px dotted #CC0000;
-background-image: url(1.png) no-repeater；
+background-image: url(1.png) no-repeater:
 border-origin: border-box;
 background-clip: content-box;
 // 超出元素内容区域的推片会被裁剪
@@ -1643,10 +1643,10 @@ background-clip: content-box;
 
 ```css
 @font-face{
-    Font-family: “name”; 
+    Font-family: “name”;
     /* name：指定一个自提名以便以后使用 */
     Src: url(“url1”),
-    Src: url(“url2”)…; 
+    Src: url(“url2”)…;
     /* url1、url2 等：字体文件的地址 */
 }
 ```
@@ -1719,12 +1719,12 @@ div{
     width: 50px; height: 50px; background-color: green;
 }
 @keyframes myAnimat{ // myAnimat 是定义动画的名字，方便使用
-    form{ width: 50px;}	// from 定义关键帧动画的起始状态
-    to{ width: 200px;}	// to 定义关键帧动画的结束状态
+    form{ width: 50px;} // from 定义关键帧动画的起始状态
+    to{ width: 200px;} // to 定义关键帧动画的结束状态
 }
 @-webkit-keyframes myAnimat{ // 为了兼容所有的浏览器再定义一个相同的动画
-    form{ width: 50px;}	// from 定义关键帧动画的起始状态
-    to{ width: 200px;}	// to 定义关键帧动画的结束状态
+    form{ width: 50px;} // from 定义关键帧动画的起始状态
+    to{ width: 200px;} // to 定义关键帧动画的结束状态
 }
 div: hover{
     animation-name: myAnimat; // 使用 myAnimat 动画
@@ -1796,3 +1796,9 @@ CSS：
 [MDN Web 文档 - CSS 参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference)  
 [MDN Web 文档 - CSS 教程](https://developer.mozilla.org/zh-CN/docs/Learn/CSS)  
 [MDN Web 文档 - CSS 动画](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Animations/Using_CSS_animations)  
+
+眼神：  
+
+[WebBase](https://chanmenglin.github.io/WebBase/) | [Github](https://github.com/ChanMenglin/WebBase)  
+[Web-Security(Web 安全)](https://github.com/ChanMenglin/WebSecurity)  
+[WebOptimize(Web 优化)](https://chanmenglin.github.io/WebOptimize/) | [Github](https://github.com/ChanMenglin/WebOptimize)  
