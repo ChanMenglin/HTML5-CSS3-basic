@@ -1513,7 +1513,7 @@ url(“2.png”) center right no-repeater;
 width: 250px;
 height: 150px;
 padding: 30px;
-margin: 10px; 
+margin: 10px;
 border: 30px dotted #CC0000;
 background-image: url(1.png) no-repeater;
 border-origin: border-box;
@@ -1528,9 +1528,9 @@ border-origin: border-box;
 
 ```css
 width: 250px;
-height: 150px; 
+height: 150px;
 padding: 30px;
-margin: 10px; 
+margin: 10px;
 border: 30px dotted #CC0000;
 background-image: url(1.png) no-repeater;
 border-origin: padding-box;
@@ -1545,9 +1545,9 @@ border-origin: padding-box;
 
 ```css
 width: 250px;
-height: 150px; 
-padding: 30px; 
-margin: 10px; 
+height: 150px;
+padding: 30px;
+margin: 10px;
 border: 30px dotted #CC0000;
 background-image: url(1.png) no-repeater；
 border-origin: content-box;
@@ -1566,11 +1566,11 @@ border-origin: content-box;
 
 ```css
 width: 250px;
-height: 150px; 
-padding: 30px; 
-margin: 10px; 
+height: 150px;
+padding: 30px;
+margin: 10px;
 border: 30px dotted #CC0000;
-background-image: url(1.png) no-repeater；
+background-image: url(1.png) no-repeater:
 border-origin: border-box;
 background-clip: border-box;
 // 超出元素边框的背景图片会被裁剪
