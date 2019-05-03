@@ -1636,6 +1636,7 @@ background-clip: content-box;
 | Embedded | .eot | Opentype 的一种压缩形式，微软专用，仅IE支持
 | SVG 字体 | .svg | SVG 是一种通用图像格式，SVG 字体是使用这种格式显示字符
 | Web开放字体 （web open font format）| .woff | 建立在 truetype 基础之上，已经发展为 web 字体的一个事实标准，如今所有现代的浏览器对 woff 格式提供了支持
+
     3. 将准备好的文件放在web服务器上
     4. 在 css 中定义 `@font-face` 规则
 
