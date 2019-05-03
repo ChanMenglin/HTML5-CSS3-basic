@@ -1790,7 +1790,7 @@ HTML：
 [MDN Web 文档 - 原生表单小部件](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/The_native_form_widgets)  
 [MDN Web 文档 - 表单组件兼容性列表](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/Property_compatibility_table_for_form_widgets)  
 
-CSS： 
+CSS：  
 
 [MDN Web 文档 - CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS)  
 [MDN Web 文档 - CSS 参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference)  
