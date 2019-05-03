@@ -69,7 +69,7 @@
         * [2.6.1 CSS3 为一个元素设置多张背景图片（background-image）](#261-css3-为一个元素设置多张背景图片background-image)
         * [2.6.2 CSS3 为图片重新定义一个尺寸（background-size）](#262-css3-为图片重新定义一个尺寸background-size)
         * [2.6.3 CSS3 中定义背景图片的定位区域（background-origin）](#263-css3-中定义背景图片的定位区域background-origin)
-        * [2.6.4 CSS3 定义图片的剪裁区域（background-clip）](#264-css3-定义图片的剪裁区域（background-clip）)
+        * [2.6.4 CSS3 定义图片的剪裁区域（background-clip）](#264-css3-定义图片的剪裁区域background-clip)
     * [2.7 Web 字体](#27-web-字体)
     * [2.8 CSS3 中的 2D 转换](#28-css3-中的-2d-转换)
     * [2.9 CSS3 过度](#29-css3-过度)
